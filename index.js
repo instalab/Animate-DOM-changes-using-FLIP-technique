@@ -34,10 +34,13 @@ function onMouseMove(e) {
 
 function onDragStop(e) {
   if (movingNode) {
+    const closedNode = movingNode
     movingNode.style.transform = ``
     movingNode.style.transition = ``
-    movingNode.style.zIndex = ``
     movingNode.style.border = ``
+    setTimeout(function () {
+      closedNode.style.zIndex = ``
+    }, 200);
     movingNode = null
     startingPosition = null
     startingPositionDifference = null
