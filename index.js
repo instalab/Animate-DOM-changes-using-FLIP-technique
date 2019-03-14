@@ -27,7 +27,7 @@ function onMouseMove(e) {
     handleNodeOrder(movingNode)
     const spd = startingPositionDifference
     const sp = startingPosition
-    movingNode.style.transform = `scale(1.01) translate(${e.x - spd.x - sp.x}px, ${e.y - spd.y - sp.y}px)`
+    movingNode.style.transform = `scale(1.02) translate(${e.x - spd.x - sp.x}px, ${e.y - spd.y - sp.y}px)`
     movingNode.style.transition = `none`
   }
 }
