@@ -1,0 +1,20 @@
+.popupcode {
+  position: fixed;
+  top: 28px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  border-left: 4px solid gray;
+  background: white;
+}
+
+.popupcode-line {
+  display: flex;
+}
+
+.popupcode-line-tab {
+  width: 20px;
+}

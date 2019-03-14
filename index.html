@@ -3,20 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>FLIP the DOM</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/domcode.css">
+    <link rel="stylesheet" href="css/codemirror.css">
   </head>
   <body>
     <header>
       <h1>Using FLIP technique to animate DOM changes</h1>
       <span>Drag elements below and abserve the smooth movement of list elements</span>
     </header>
-    <ul class="number-list">
-      <li>ONE</li>
-      <li>TWO</li>
-      <li>THREE</li>
-      <li>FOUR</li>
-      <li>FIVE</li>
+    <ul class="draggable-list">
+      <li class="draggable-item">ONE</li>
+      <li class="draggable-item">TWO</li>
+      <li class="draggable-item">THREE</li>
+      <li class="draggable-item">FOUR</li>
+      <li class="draggable-item">FIVE</li>
     </ul>
-    <script src="index.js" charset="utf-8"></script>
+    <article class="popupcode cm-s-default">
+      
+      <div class="popupcode-line">
+        <span class="cm-tag cm-bracket">&lt;</span>
+        <span class="cm-tag">ul</span>
+        <span class="cm-tag cm-bracket">&gt;</span>
+      </div>
+      
+      <div class="popupcode-items-code">
+        <div class="popupcode-line popupcode-item-line">
+          <span class="popupcode-line-tab"></span>
+          <span class="cm-tag cm-bracket">&lt;</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+          ONE
+          <span class="cm-tag cm-bracket">&lt;/</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+        </div>
+        
+        <div class="popupcode-line popupcode-item-line">
+          <span class="popupcode-line-tab"></span>
+          <span class="cm-tag cm-bracket">&lt;</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+          TWO
+          <span class="cm-tag cm-bracket">&lt;/</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+        </div>
+        
+        <div class="popupcode-line popupcode-item-line">
+          <span class="popupcode-line-tab"></span>
+          <span class="cm-tag cm-bracket">&lt;</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+          THREE
+          <span class="cm-tag cm-bracket">&lt;/</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+        </div>
+        
+        <div class="popupcode-line popupcode-item-line">
+          <span class="popupcode-line-tab"></span>
+          <span class="cm-tag cm-bracket">&lt;</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+          FOUR
+          <span class="cm-tag cm-bracket">&lt;/</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+        </div>
+        
+        <div class="popupcode-line popupcode-item-line">
+          <span class="popupcode-line-tab"></span>
+          <span class="cm-tag cm-bracket">&lt;</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+          FIVE
+          <span class="cm-tag cm-bracket">&lt;/</span>
+          <span class="cm-tag">li</span>
+          <span class="cm-tag cm-bracket">&gt;</span>
+        </div>
+      </div>
+      
+      <div class="popupcode-line">
+        <span class="cm-tag cm-bracket">&lt;/</span>
+        <span class="cm-tag">ul</span>
+        <span class="cm-tag cm-bracket">&gt;</span>
+      </div>
+
+    </article>
+    <script src="js/Events/ItemDragEvent.js" charset="utf-8"></script>
+    <script src="js/Events/ItemBeforeOrderChangeEvent.js" charset="utf-8"></script>
+    <script src="js/Events/ItemOrderChangedEvent.js" charset="utf-8"></script>
+    <script src="js/itemEvents.js" charset="utf-8"></script>
+    <script src="js/itemReorderer.js" charset="utf-8"></script>
+    <script src="js/itemFlipping.js" charset="utf-8"></script>
+    <script src="js/itemMovement.js" charset="utf-8"></script>
+    <script src="js/itemCodeReflect.js" charset="utf-8"></script>
   </body>
 </html>
