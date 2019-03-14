@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 60px 60px 256px 60px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  padding-bottom: 32px;
+}
+
+.number-list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 32px;
+  height: 100%;
+  border-radius: 16px;
+  background: lightgray;
+  list-style: none;
+}
+
+.number-list li {
+  position: relative;
+  padding: 8px;
+  background: #00BABC;
+  transition: transform .2s linear;
+  user-select: none;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.number-list li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.number-list li:active {
+  transform: scale(1.01);
+}
