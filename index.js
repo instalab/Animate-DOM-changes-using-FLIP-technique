@@ -33,13 +33,15 @@ function onMouseMove(e) {
 }
 
 function onDragStop(e) {
-  movingNode.style.transform = ``
-  movingNode.style.transition = ``
-  movingNode.style.zIndex = ``
-  movingNode.style.border = ``
-  movingNode = null
-  startingPosition = null
-  startingPositionDifference = null
+  if (movingNode) {
+    movingNode.style.transform = ``
+    movingNode.style.transition = ``
+    movingNode.style.zIndex = ``
+    movingNode.style.border = ``
+    movingNode = null
+    startingPosition = null
+    startingPositionDifference = null
+  }
 }
 
 function handleNodeOrder(movingNode) {
